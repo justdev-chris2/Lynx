@@ -13,7 +13,7 @@ WizardStyle=modern
 ArchitecturesInstallIn64BitMode=x64
 
 [Files]
-Source: "lynx.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\lynx.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "std\*.lnx"; DestDir: "{app}\std"; Flags: ignoreversion
 
 [Icons]
