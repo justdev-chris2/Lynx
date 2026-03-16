@@ -11,7 +11,10 @@ typedef struct {
     double numValue;
     char* strValue;
     VarType type;
-} Variable;
+} VariableImpl;
+
+VariableImpl den[MAX_VARS];
+int varCount = 0;
 
 typedef struct {
     char name[64];
@@ -19,9 +22,6 @@ typedef struct {
     int paramCount;
     char* body;
 } FunctionDef;
-
-Variable den[MAX_VARS];
-int varCount = 0;
 
 FunctionDef functions[MAX_FUNCS];
 int funcCount = 0;
@@ -145,7 +145,7 @@ int callFunction(const char* name) {
             printf("🐾 Called function: %s\n", name);
             
             // Save current variables
-            Variable savedDen[MAX_VARS];
+            VariableImpl savedDen[MAX_VARS];
             int savedVarCount = varCount;
             for (int j = 0; j < varCount; j++) {
                 savedDen[j] = den[j];
