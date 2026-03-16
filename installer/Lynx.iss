@@ -14,7 +14,7 @@ ArchitecturesInstallIn64BitMode=x64
 
 [Files]
 Source: "..\lynx.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "std\*.lnx"; DestDir: "{app}\std"; Flags: ignoreversion
+Source: "..\std\*.lnx"; DestDir: "{app}\std"; Flags: ignoreversion
 
 [Icons]
 Name: "{group}\Lynx"; Filename: "{app}\lynx.exe"
