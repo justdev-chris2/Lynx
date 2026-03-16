@@ -21,7 +21,7 @@ Name: "{group}\Lynx"; Filename: "{app}\lynx.exe"
 Name: "{group}\Uninstall Lynx"; Filename: "{uninstallexe}"
 
 [Registry]
-Root: HKCU; Subkey: "Environment"; ValueType: string; ValueName: "Path"; ValueData: "{old};{app}"; Check: NeedsAddPath('{app}')
+Root: HKCU; Subkey: "Environment"; ValueType: string; ValueName: "Path"; ValueData: "{app}"; Check: NeedsAddPath('{app}')
 
 [Code]
 function NeedsAddPath(Param: string): boolean;
