@@ -1,5 +1,5 @@
-
-# 🐾 Lynx v1.3
+# 🐾 Lynx
+> v1.3.2
 
 Lynx is a lightweight, animal-themed scripting engine built in C. It supports modular packs, persistent memory stashing, and basic arithmetic for rapid tool development.
 
